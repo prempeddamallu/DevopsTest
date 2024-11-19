@@ -1,13 +1,13 @@
 pipeline{
     agent any 
     stages{
-        stage('Build'){
-            steps{
+        // stage('Build'){
+        //     steps{
                 
-                git checkout
+        //         git checkout
                 
-            }
-        }
+        //     }
+        // }
         stage('uild'){
             steps{
                 script{
