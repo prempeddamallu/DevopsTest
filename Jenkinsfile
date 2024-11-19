@@ -7,11 +7,11 @@ pipeline{
       }
     }
 
-    stage("Run file"){
-      steps{
-        sh "python3 app.py"
-      }
-    }
+    // stage("Run file"){
+    //   steps{
+    //     sh "python3 app.py"
+    //   }
+    // }
     
   }
   
