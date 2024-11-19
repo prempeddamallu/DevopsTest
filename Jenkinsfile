@@ -1,18 +1,26 @@
 pipeline{
-  agent any
-  stages{
-    stage("check out"){
-      steps{
-        git checkout
-      }
+    agent any 
+    stages{
+        stage('Build'){
+            steps{
+                script{
+                    echo "building"
+                }
+            }
+        }
+        stage('uild'){
+            steps{
+                script{
+                    echo "testing"
+                }
+            }
+        }
+        stage('Bui'){
+            steps{
+                script{
+                    echo "Deploying"
+                }
+            }
+        }
     }
-
-    // stage("Run file"){
-    //   steps{
-    //     sh "python3 app.py"
-    //   }
-    // }
-    
-  }
-  
 }
