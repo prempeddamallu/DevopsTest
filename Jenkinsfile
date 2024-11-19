@@ -11,7 +11,7 @@ pipeline{
         stage('uild'){
             steps{
                 script{
-                    sh "python app.py"
+                    sh "python3 app.py"
                 }
             }
         }
