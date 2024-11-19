@@ -3,9 +3,9 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                script{
-                    git checkout
-                }
+                
+                git checkout
+                
             }
         }
         stage('uild'){
